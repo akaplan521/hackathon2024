@@ -27,6 +27,14 @@
                 <button type="submit">Enter</button>
             </div>
         </form>
+
+        {% if phish %}
+        <div class="phishing-result">
+            <p>Phishing Test Result:</p>
+            <p>{{ phish }}</p>
+        </div>
+        {% endif %}
+
     </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
