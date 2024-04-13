@@ -81,6 +81,7 @@ def reemail():
         print(text)
         scam = False
         phish = detectScam(text)
+        print(phish)
         if phish == 1:
             phish = 'Phishing Detected.'
         else:
@@ -88,5 +89,5 @@ def reemail():
 
         print(phish)
             
-        return render_template('test.html', phish = phish)
+        return render_template('test.html',phish=phish)
         
