@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phishing Main</title>
+    <title>Phishing Form</title>
     <link rel="stylesheet" href="static/style.css">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
@@ -32,21 +32,53 @@
     <form action= "#"
           method="POST">
         <fieldset>
-            <legend>What types of climbing do you do?</legend>
+            <legend>Does your email have the following?</legend>
             <p>
-                <input type="checkbox" name="chkBoulder"
-                    id="chkBoulder" value ="1" tabindex = "200">
-                <label for="chkBoulder">Bouldering</label>
+                <input type="checkbox" name="chkGrammar"
+                    id="chkGrammar" value ="1" tabindex = "200">
+                <label for="chkGrammar">Does the email contain poor spelling or
+bad grammar?</label>
             </p>
             <p>
-                <input type="checkbox" name="chkLead"
-                    id="chkLead" value ="1" tabindex = "200">
-                <label for="chkLead">Lead</label>
+                <input type="checkbox" name="chkAwk"
+                    id="chkAwk" value ="1" tabindex = "200">
+                <label for="chkAwk">Is the email awkwardly worded or
+nonsensical?</label>
             </p>
             <p>
-                <input type="checkbox" name="chkTopRope"
-                    id="chkTopRope" value ="1" tabindex = "200">
-                <label for="chkTopRope">Top Rope</label>
+                <input type="checkbox" name="chkAddress"
+                    id="chkAddress" value ="1" tabindex = "200">
+                <label for="chkAddress">Is the “from” address unrecognizable or
+just plain weird?</label>
+            </p>
+            <p>
+                <input type="checkbox" name="chkLarge"
+                    id="chkLarge" value ="1" tabindex = "200">
+                <label for="chkLarge">Does the email promise large sums of
+money or other unbelievable offers?</label>
+            </p>
+            <p>
+                <input type="checkbox" name="chkThreat"
+                    id="chkThreat" value ="1" tabindex = "200">
+                <label for="chkThreat">Does the email use threatening language?</label>
+            </p>
+            <p>
+                <input type="checkbox" name="chkUrgent"
+                    id="chkUrgent" value ="1" tabindex = "200">
+                <label for="chkUrgent">Does the email contain a sense of
+urgency?</label>
+            </p>
+            <p>
+                <input type="checkbox" name="chkCall"
+                    id="chkCall" value ="1" tabindex = "200">
+                <label for="chkCall">Does the email have a call-to-action such
+as clicking a link?</label>
+            </p>
+            <p>
+                <input type="checkbox" name="chkMoney"
+                    id="chkMoney" value ="1" tabindex = "200">
+                <label for="chkMoney">Does the email contain an unexpected
+attachment or request for money?</label>
             </p>
         </fieldset>
         <fieldset>
