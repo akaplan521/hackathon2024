@@ -9,20 +9,19 @@ body h1, h2, h3, p, li  {
 .horiz-center {
     display: grid;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
-
+    background-color: #F3E669;
+    margin: 2vw;
 }
 
 .form-style {
     width: 100%;
-    background: white;
+    background: #F3E669;;
     margin-bottom: 20px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-
 }
 
 .navbar {
