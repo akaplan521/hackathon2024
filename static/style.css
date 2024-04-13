@@ -52,6 +52,7 @@ body h1, h2, h3, p, li  {
   img {
     float: right;
     max-width: 20%;
+    margin: 2vw;
   }
 
   /* Dropdown content (hidden by default) */

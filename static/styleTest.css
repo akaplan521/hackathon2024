@@ -19,6 +19,12 @@ body h1, h2, h3, p, li  {
   margin: 2vw;
 }
 
+img {
+  float: right;
+  max-width: 20%;
+  margin: 2vw;
+}
+
 .form-style {
     width: 100%;
     background: #F3E669;;
