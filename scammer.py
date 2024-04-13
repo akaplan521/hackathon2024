@@ -1,8 +1,18 @@
 from flask import Flask, render_template, request, jsonify, url_for, redirect
 import traceback
+import pandas, nltk
 
 
 app = Flask(__name__, static_folder='static')
+
+def detectScam(text):
+     countFlags = 0
+     badwords= ['vulnerability', 'click here', 'click here to', 'security reasons', 'urgent', 'postal', 'alert', 'immediate']
+     
+     for word in badwords:
+        if text.contains(word):
+            countFlags = countFlags + 1
+
 
 @app.route('/')
 def start():
@@ -12,24 +22,27 @@ def start():
 def info():
     return render_template('info.html')
 
-@app.route('/test', methods=['POST','GET'])
+@app.route('/test')
 def test():
     try:
-        if request.method == 'POST':
-            print('hello')
-            data = request.get_json()
-            text = data.get('searchQuery')
-            scam = False
-            flags = ['']
-
-            print(text)
-            
-            return render_template('test.html', data = flags, scam = scam)
+        return render_template('test.html')
         
 
     except Exception as e:
         traceback.print_exc()
         return jsonify({'error': str(e)})
 
+@app.route('/reemail', methods=['POST'])
+def reemail():
+        print('hello')
+        data = request.get_json()
+        text = data.get('text')
+        print(text)
+        scam = False
+        flags = ['']
 
+        print(text)
+            
+        return render_template('test.html', flags = flags, scam = scam)
+        
 
