@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Main</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<div class="navbar">
+    <a href="http://127.0.0.1:5000">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="http://127.0.0.1:5000/info">About Phishing</a>
+            <a href="http://127.0.0.1:5000/test">Test My Email</a>
+        </div>
+    </div>
+</div>
+
+<img class = "csdept" alt="Web Logo" src="../static/csimg.png">
+
+<h1>Phishing Checklist</h1>
+
+<h2>Fill out the list below to see if you are being phished!</h2>
+
+<section class="form-section">
+    <form action= "#"
+          method="POST">
+        <fieldset>
+            <legend>What types of climbing do you do?</legend>
+            <p>
+                <input type="checkbox" name="chkBoulder"
+                    id="chkBoulder" value ="1" tabindex = "200">
+                <label for="chkBoulder">Bouldering</label>
+            </p>
+            <p>
+                <input type="checkbox" name="chkLead"
+                    id="chkLead" value ="1" tabindex = "200">
+                <label for="chkLead">Lead</label>
+            </p>
+            <p>
+                <input type="checkbox" name="chkTopRope"
+                    id="chkTopRope" value ="1" tabindex = "200">
+                <label for="chkTopRope">Top Rope</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <input type="submit">
+            </p>
+        </fieldset>
+    </form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="static/script.js"></script>
+</body>
+</html>
