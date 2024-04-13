@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phishing Information</title>
-    <link rel="stylesheet" href="static/styleInfo.css">
+    <link rel="stylesheet" href="static/style.css">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-    
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="http://127.0.0.1:5000/info">About Phishing</a>
+            <a href="http://127.0.0.1:5000/test">Test My Email</a>
+        </div>
+    </div>
+</div>
+<h1>Phishing Email Scams</h1>
+<h2>What is it? How can I prevent it? What should I do if I receive one?</h2>
+
+<p>Have you ever gotten an email from the “UVM Finance Department” alerting you that they’ve run into an issue with your current billing information? How about a work study program that seems just a little too good to be true? Chances are you’ve probably been on the receiving end of a phishing email scam. Phishing is a form of electronic attack designed to steal some form of personal information from the recipient (credentials, financial information, etc.). As legitimate as the emails can seem, it’s important to remain vigilant and maintain safe online practices.</p>
+<p>Here are some Hallmarks of a classic phishing scam:</p>
+<ul>
+    <li>Generic greeting</li>
+    <li>The premise that your account is on hold because of a billing problem</li>
+    <li>A link included in the email where you are encouraged to update your payment details</li>
+</ul>
+<p>There are several ways to protect yourself against email (because an email filter only goes so far). First and foremost, never provide personal information in response to unprompted request. If you have reason to believe that the email could be legitimate, reach out to the official contact for the presumed sender to make sure that the email is genuine. No matter what, you should never provide your password/credentials in response to an unsolicited request.</p>
+<p>You can visit the following link if you would like more information regarding anti-phishing efforts at UVM.</p>
+<a href="https://www.uvm.edu/it/kb/article/proofpoint/">UVM Phishing Prevention</a>
+<p>If you find yourself on the receiving end of a phishing email, please submit an email to abuse@uvm.edu.</p>
 </body>
 </html>
