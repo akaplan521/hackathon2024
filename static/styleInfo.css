@@ -16,7 +16,7 @@ body h1, h2, h3, p, li  {
   .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #F6E006;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -33,23 +33,28 @@ body h1, h2, h3, p, li  {
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #F6E006;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
+
+  p a {
+    color: black;
+    background-color: #F6E006;
+  }
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: blueviolet;
+    background-color: #525E53;
   }
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #F6E006;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -58,7 +63,7 @@ body h1, h2, h3, p, li  {
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
-    color: black;
+    color: #525E53;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
