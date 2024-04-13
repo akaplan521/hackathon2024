@@ -44,6 +44,12 @@ body h1, h2, h3, p, li  {
     color: black;
     background-color: #F6E006;
   }
+
+  img {
+    float: right;
+    max-width: 20%;
+    margin: 2vw;
+  }
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {

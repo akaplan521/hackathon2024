@@ -49,6 +49,12 @@ body h1, h2, h3, p, li  {
     background-color: #F6E006;
   }
   
+  img {
+    float: right;
+    max-width: 20%;
+    margin: 2vw;
+  }
+
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
