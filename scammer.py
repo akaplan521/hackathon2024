@@ -63,6 +63,10 @@ def start():
 def info():
     return render_template('info.html')
 
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
 @app.route('/test')
 def test():
     try:
