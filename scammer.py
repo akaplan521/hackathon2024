@@ -14,5 +14,6 @@ def info():
 
 @app.route('/test')
 def test():
-    return 0
+    return render_template('test.html')
+
 
