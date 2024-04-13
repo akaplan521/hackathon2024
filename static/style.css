@@ -41,7 +41,7 @@ body h1, h2, h3, p, li  {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: blueviolet;
+    background-color: #525E53;
   }
   
   p a {
