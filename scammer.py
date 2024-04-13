@@ -8,12 +8,12 @@ app = Flask(__name__, static_folder='static')
 def start():
     return render_template('index.html')
 
-#@app.route('/info')
-#def info():
-#    return 0
+@app.route('/info')
+def info():
+    return render_template('info.html')
 
-#@app.route('/test')
-#def test():
-#    return 0
+@app.route('/test')
+def test():
+    return 0
 
 
