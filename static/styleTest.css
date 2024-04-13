@@ -1,3 +1,11 @@
+body {
+  background: #DDFFDF;
+}
+
+body h1, h2, h3, p, li  {
+  margin: 2vw;
+}
+
 .horiz-center {
     display: grid;
     justify-content: center;
@@ -19,7 +27,7 @@
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #606E61;
     font-family: Arial;
   }
   
@@ -27,7 +35,7 @@
   .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #F6E006;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,7 +52,7 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #F6E006;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -53,8 +61,9 @@
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: blueviolet;
+    background-color: #525E53;
   }
+
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
