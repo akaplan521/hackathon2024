@@ -1,32 +1,25 @@
-body {
-  background: #DDFFDF;
-}
-
-body h1, h2, h3, p, li  {
-  margin: 2vw;
-}
-
 .horiz-center {
     display: grid;
     justify-content: center;
-    background-color: #F3E669;
-    margin: 2vw;
+    background-color: rgb(255, 255, 255);
+
 }
 
 .form-style {
     width: 100%;
-    background: #F3E669;;
+    background: white;
     margin-bottom: 20px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+
 }
 
 .navbar {
     overflow: hidden;
-    background-color: #606E61;
+    background-color: #333;
     font-family: Arial;
   }
   
@@ -34,7 +27,7 @@ body h1, h2, h3, p, li  {
   .navbar a {
     float: left;
     font-size: 16px;
-    color: #F6E006;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -51,7 +44,7 @@ body h1, h2, h3, p, li  {
     font-size: 16px;
     border: none;
     outline: none;
-    color: #F6E006;
+    color: white;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -60,15 +53,14 @@ body h1, h2, h3, p, li  {
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #525E53;
+    background-color: blueviolet;
   }
-
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #F6E006;
+    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -77,7 +69,7 @@ body h1, h2, h3, p, li  {
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
-    color: #525E53;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
